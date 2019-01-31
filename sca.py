@@ -33,9 +33,9 @@ class main():
         self.serverChoose_module = server_choose.server_choose(self.engine);
 
         self.console.printLogo();
-        self.clientInit();
-        self.userInit();
-        self.login();
+        #self.clientInit();
+        #self.userInit();
+        #self.login();
         self.startSCA();
 
     def clientInit(self):
