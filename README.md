@@ -50,7 +50,7 @@ During the experiment, the SCA Client was active 24 hours a day, seven days a we
 <b>Script examples</b>
 
 ./screen_click_ai/script/a_free<br>
-        <p>1. autotyper</p>
+        - 1. autotyper<br>
         2. combat_fighter<br>
         3. iron_ore_mining<br>
         4. sapphire_ring_crafting<br>
