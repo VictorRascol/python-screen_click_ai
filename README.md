@@ -1,4 +1,4 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Disambig-dark.svg/28px-Disambig-dark.svg.png"/>
+<center><img src="https://raw.githubusercontent.com/Suirdna/python-screen_click_ai/master/favicon.png"/></center>
 
 
 The Screen Click AI project, abbreviated as SCA, was launched on December 1, 2018.
