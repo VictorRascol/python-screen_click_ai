@@ -1,4 +1,4 @@
-<center><img src="https://raw.githubusercontent.com/Suirdna/python-screen_click_ai/master/favicon.png"/></center>
+<img src="https://raw.githubusercontent.com/Suirdna/python-screen_click_ai/master/favicon.png"/>
 
 
 The Screen Click AI project, abbreviated as SCA, was launched on December 1, 2018.
@@ -46,3 +46,35 @@ During the experiment, the SCA Client was active 24 hours a day, seven days a we
 
 - SCA Client will evolve over time and its task functionality will only increase. In the future, it is planned to provide the player with a special feature set that will allow the development of private solutions of various complexity tasks and their proper use.
 
+
+<b>Script examples</b>
+
+./screen_click_ai/script/a_free
+    1. autotyper
+    2. combat_fighter
+    3. iron_ore_mining
+    4. sapphire_ring_crafting
+
+./screen_click_ai/script/a_member
+    1. bow_fletching
+    2. fish_cooking
+    3. herb_cleaning
+    4. marrentill_tar
+    5. mythical_cape (Crafting)
+    5. nz_training (Nightmare Zone script)
+
+./screen_click_ai/script/p_farm
+    1. death_rune_buy
+    
+./screen_click_ai/script/x_developer
+    1. developer_tools (Check coordination)
+    2. template (Clean script template)
+
+./screen_click_ai/script/x_modules
+    1. camera_view (Bot moves Camera using WASD)
+    2. gps (Coordination grid) - Unstable
+    3. init
+    4. logout (Auto logout module)
+    5. object_detection (NPC detection / AMES detection)
+    6. send_mail (Bot send email to user)
+    7. server_choose () - Unstable
