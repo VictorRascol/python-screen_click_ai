@@ -80,7 +80,7 @@ During the experiment, the SCA Client was active 24 hours a day, seven days a we
 - server_choose () - Unstable<br>
 
 
-<b>Bot test videos</b>
-combat_fighter script: https://www.youtube.com/watch?v=thULn0qJF1Q
-mythical_cape script: https://www.youtube.com/watch?v=3QHd_Yfz-Ak&t=78s
-sapphire_ring_crafting script: https://www.youtube.com/watch?v=zR-Fbxx7mmM
+<b>Bot test videos</b><br>
+combat_fighter script: https://www.youtube.com/watch?v=thULn0qJF1Q<br>
+mythical_cape script: https://www.youtube.com/watch?v=3QHd_Yfz-Ak&t=78s<br>
+sapphire_ring_crafting script: https://www.youtube.com/watch?v=zR-Fbxx7mmM<br>
