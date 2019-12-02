@@ -78,3 +78,9 @@ During the experiment, the SCA Client was active 24 hours a day, seven days a we
 - object_detection (NPC detection / AMES detection)<br>
 - send_mail (Bot send email to user)<br>
 - server_choose () - Unstable<br>
+
+
+<b>Bot test videos</b>
+combat_fighter script: https://www.youtube.com/watch?v=thULn0qJF1Q
+mythical_cape script: https://www.youtube.com/watch?v=3QHd_Yfz-Ak&t=78s
+sapphire_ring_crafting script: https://www.youtube.com/watch?v=zR-Fbxx7mmM
