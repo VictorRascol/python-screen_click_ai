@@ -50,31 +50,31 @@ During the experiment, the SCA Client was active 24 hours a day, seven days a we
 <b>Script examples</b>
 
 ./screen_click_ai/script/a_free<br>
-    <t>1. autotyper<br>
-    2. combat_fighter<br>
-    3. iron_ore_mining<br>
-    4. sapphire_ring_crafting<br>
+        1. autotyper<br>
+        2. combat_fighter<br>
+        3. iron_ore_mining<br>
+        4. sapphire_ring_crafting<br>
 
 ./screen_click_ai/script/a_member<br>
-    1. bow_fletching<br>
-    2. fish_cooking<br>
-    3. herb_cleaning<br>
-    4. marrentill_tar<br>
-    5. mythical_cape (Crafting)<br>
-    5. nz_training (Nightmare Zone script)<br>
+        1. bow_fletching<br>
+        2. fish_cooking<br>
+        3. herb_cleaning<br>
+        4. marrentill_tar<br>
+        5. mythical_cape (Crafting)<br>
+        5. nz_training (Nightmare Zone script)<br>
 
 ./screen_click_ai/script/p_farm<br>
-    1. death_rune_buy<br>
+        1. death_rune_buy<br>
     
 ./screen_click_ai/script/x_developer<br>
-    1. developer_tools (Check coordination)<br>
-    2. template (Clean script template)<br>
+        1. developer_tools (Check coordination)<br>
+        2. template (Clean script template)<br>
 
 ./screen_click_ai/script/x_modules<br>
-    1. camera_view (Bot moves Camera using WASD)<br>
-    2. gps (Coordination grid) - Unstable<br>
-    3. init<br>
-    4. logout (Auto logout module)<br>
-    5. object_detection (NPC detection / AMES detection)<br>
-    6. send_mail (Bot send email to user)<br>
-    7. server_choose () - Unstable<br>
+        1. camera_view (Bot moves Camera using WASD)<br>
+        2. gps (Coordination grid) - Unstable<br>
+        3. init<br>
+        4. logout (Auto logout module)<br>
+        5. object_detection (NPC detection / AMES detection)<br>
+        6. send_mail (Bot send email to user)<br>
+        7. server_choose () - Unstable<br>
