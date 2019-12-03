@@ -1,5 +1,7 @@
 <img src="https://raw.githubusercontent.com/Suirdna/python-screen_click_ai/master/favicon.png"/>
 
+<h3>How to install Python for SCA?</h3>
+Link: https://github.com/Suirdna/python-screen_click_ai/blob/master/setup.md<br><br>
 
 The Screen Click AI project, abbreviated as SCA, was launched on December 1, 2018.
 
