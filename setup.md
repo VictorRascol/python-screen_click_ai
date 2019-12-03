@@ -9,4 +9,4 @@
   
 - Run SCA using Command Prompt (CMD) or Powershell<br>
   - python sca.py<br><br>
-  <img src="https://raw.githubusercontent.com/Suirdna/python-screen_click_ai/master/resources/setup.png"/>
+  <img src="https://raw.githubusercontent.com/Suirdna/python-screen_click_ai/master/resources/open.png"/>
