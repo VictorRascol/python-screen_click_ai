@@ -3,6 +3,7 @@
 <h3>How to install Python for SCA?</h3>
 Link: https://github.com/Suirdna/python-screen_click_ai/blob/master/setup.md<br><br>
 
+<h3>What is SCA?</h3>
 The Screen Click AI project, abbreviated as SCA, was launched on December 1, 2018.
 
 SCA - This is an Old School Runescape Client written in the Python programming language and using advanced computer technology,
