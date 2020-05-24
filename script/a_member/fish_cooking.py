@@ -14,119 +14,119 @@ from data.script.a_member import fish_cooking_config as config
 
 class fish_cooking(threading.Thread):
 
-    sca = None;
-    init = None;
-    camera = None;
-    engine = None;
-    input = None;
-    config = None;
-    detector = None;
-    console = None;
-    signal = None;
-    xy = None;
+    sca = None
+    init = None
+    camera = None
+    engine = None
+    input = None
+    config = None
+    detector = None
+    console = None
+    signal = None
+    xy = None
 
-    STATUS_0 = True;
-    STATUS_1 = True;
-    STATUS_2 = True;
-    STATUS_3 = True;
-    SCRIPT_PHASE = 0;
-    INVENTORY_COUNT = 0;
-    SUCCESS_COUNT = 0;
-    OUTPUT = None;
-    COMMAND = None;
+    STATUS_0 = True
+    STATUS_1 = True
+    STATUS_2 = True
+    STATUS_3 = True
+    SCRIPT_PHASE = 0
+    INVENTORY_COUNT = 0
+    SUCCESS_COUNT = 0
+    OUTPUT = None
+    COMMAND = None
 
     def __init__(self):
-        threading.Thread.__init__(self);
-        self.sca = logout.logout;
-        self.init = init.init();
-        self.engine = opencv2.opencv2;
-        self.input = control.control;
-        self.config = config.fish_cooking_config;
-        self.detector = object_detection.object_detection();
-        self.console = interface.interface;
-        self.camera = camera_view.camera_view;
-        self.signal = send_mail.sendmail;
+        threading.Thread.__init__(self)
+        self.sca = logout.logout
+        self.init = init.init()
+        self.engine = opencv2.opencv2
+        self.input = control.control
+        self.config = config.fish_cooking_config
+        self.detector = object_detection.object_detection()
+        self.console = interface.interface
+        self.camera = camera_view.camera_view
+        self.signal = send_mail.sendmail
 
     def run(self):
-        self.init.startWait();
-        self.camera.cameraInit(self.camera,4);
-        self.camera.cameraUp(self.camera);
+        self.init.startWait()
+        self.camera.cameraInit(self.camera,4)
+        self.camera.cameraUp(self.camera)
         while self.STATUS_0:
             if self.SCRIPT_PHASE == 0:
                 while self.STATUS_1:
-                    self.detector.npcDetection();
+                    self.detector.npcDetection()
                     if self.detector.NPC_STATUS_DETECTION:
-                        self.STATUS_1 = False;
-                        self.SCRIPT_PHASE = 1;
+                        self.STATUS_1 = False
+                        self.SCRIPT_PHASE = 1
                     else:
-                        pass;
+                        pass
             elif self.SCRIPT_PHASE == 1:
                 if self.engine.getObject(self.engine,self.config.ITEM[0]):
-                    self.xy = self.engine.getSize(self.engine,self.config.ITEM[0]);
-                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.ITEM[0],1);
+                    self.xy = self.engine.getSize(self.engine,self.config.ITEM[0])
+                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.ITEM[0],1)
                 else:
-                    pass;
+                    pass
                 if self.engine.getObject(self.engine,self.config.INTERFACE[1]):
-                    self.xy = self.engine.getSize(self.engine,self.config.INTERFACE[1]);
-                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.INTERFACE[1],1);
+                    self.xy = self.engine.getSize(self.engine,self.config.INTERFACE[1])
+                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.INTERFACE[1],1)
                 else:
-                    pass;
+                    pass
                 if self.engine.getObject(self.engine,self.config.ITEM[1]):
-                    self.xy = self.engine.getSize(self.engine,self.config.ITEM[1]);
-                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.ITEM[1],1);
+                    self.xy = self.engine.getSize(self.engine,self.config.ITEM[1])
+                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.ITEM[1],1)
                 else:
-                    self.SCRIPT_PHASE = 96;
+                    self.SCRIPT_PHASE = 96
                 if self.engine.getObject(self.engine,self.config.OBJECT[0]):
-                    self.xy = self.engine.getSize(self.engine,self.config.OBJECT[0]);
-                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.OBJECT[0],1);
+                    self.xy = self.engine.getSize(self.engine,self.config.OBJECT[0])
+                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.OBJECT[0],1)
                 elif self.engine.getObject(self.engine,self.config.OBJECT[1]):
-                    self.xy = self.engine.getSize(self.engine,self.config.OBJECT[1]);
-                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.OBJECT[1],1);
+                    self.xy = self.engine.getSize(self.engine,self.config.OBJECT[1])
+                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.OBJECT[1],1)
                 else:
-                    pass;
+                    pass
                 if self.engine.getObject(self.engine,self.config.BUTTON[0]):
-                    self.xy = self.engine.getSize(self.engine,self.config.BUTTON[0]);
-                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.BUTTON[0],65);
-                    self.SCRIPT_PHASE = 2;
+                    self.xy = self.engine.getSize(self.engine,self.config.BUTTON[0])
+                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.BUTTON[0],65)
+                    self.SCRIPT_PHASE = 2
                 else:
-                    pass;
+                    pass
             elif self.SCRIPT_PHASE == 2:
                 while self.STATUS_2:
-                    self.detector.npcDetection();
+                    self.detector.npcDetection()
                     if self.detector.NPC_STATUS_DETECTION:
-                        self.STATUS_2 = False;
+                        self.STATUS_2 = False
                     else:
-                        pass;
+                        pass
                 if self.engine.getObject(self.engine,self.config.INTERFACE[0]):
-                    self.xy = self.engine.getSize(self.engine,self.config.INTERFACE[0]);
-                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.INTERFACE[0],1);
-                    self.SCRIPT_PHASE = 1;
-                    self.SUCCESS_COUNT += 1;
-                    self.STATUS_2 = True;
-                    self.OUTPUT = "{}{}{}".format(self.console.TERMINAL_INTERFACE[0],self.console.TERMINAL_INTERFACE[3],str(self.SUCCESS_COUNT));
-                    print(self.OUTPUT);
+                    self.xy = self.engine.getSize(self.engine,self.config.INTERFACE[0])
+                    self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.INTERFACE[0],1)
+                    self.SCRIPT_PHASE = 1
+                    self.SUCCESS_COUNT += 1
+                    self.STATUS_2 = True
+                    self.OUTPUT = "{}{}{}".format(self.console.TERMINAL_INTERFACE[0],self.console.TERMINAL_INTERFACE[3],str(self.SUCCESS_COUNT))
+                    print(self.OUTPUT)
                 else:
-                    pass;
+                    pass
             elif self.SCRIPT_PHASE == 96:
-                print(self.console.TERMINAL_INTERFACE[0]+self.console.TERMINAL_INTERFACE[6]);
-                self.signal.mailInit(self.signal,data.config.USERNAME,self.config.SCRIPT_NAME);
-                self.sca.logoutInit(self.sca,0);
-                exit();
+                print(self.console.TERMINAL_INTERFACE[0]+self.console.TERMINAL_INTERFACE[6])
+                self.signal.mailInit(self.signal,data.config.USERNAME,self.config.SCRIPT_NAME)
+                self.sca.logoutInit(self.sca,0)
+                exit()
 
             try:
                 if keyboard.is_pressed('c'):
-                    self.COMMAND = input(self.console.TERMINAL_INTERFACE[0] + self.console.TERMINAL_INTERFACE[7]);
+                    self.COMMAND = input(self.console.TERMINAL_INTERFACE[0] + self.console.TERMINAL_INTERFACE[7])
                     if self.COMMAND == "p" or self.COMMAND == "P" or self.COMMAND == "Pause" or self.COMMAND == "PAUSE" or self.COMMAND == "pause":
-                        print(self.console.TERMINAL_INTERFACE[0] + self.console.TERMINAL_INTERFACE[5]);
-                        time.sleep(30);
+                        print(self.console.TERMINAL_INTERFACE[0] + self.console.TERMINAL_INTERFACE[5])
+                        time.sleep(30)
                     elif self.COMMAND == "e" or self.COMMAND == "E" or self.COMMAND == "Exit" or self.COMMAND == "EXIT" or self.COMMAND == "exit":
-                        self.STATUS = False;
-                        exit();
+                        self.STATUS = False
+                        exit()
                 else:
-                    pass;
+                    pass
             except:
-                pass;
+                pass
 
     def getStatus(self):
-        print(self.console.TERMINAL_INTERFACE[0]+self.config.SCRIPT_NAME+self.console.TERMINAL_INTERFACE[4]);
-        self.start();
+        print(self.console.TERMINAL_INTERFACE[0]+self.config.SCRIPT_NAME+self.console.TERMINAL_INTERFACE[4])
+        self.start()

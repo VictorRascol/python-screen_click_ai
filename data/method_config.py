@@ -11,7 +11,7 @@ class method_config():
         "marrentill_tar",
         "sapphire_ring_crafting",
         "death_rune_buy",
-    ];
+    ]
 
     ABOUT_SCRIPT = [
         "Developer Tools by Suirdna",
@@ -24,4 +24,4 @@ class method_config():
         "Marrentill Tar making Script",
         "Sapphire Ring crafting Script",
         "Death Rune making Money Script",
-    ];
+    ]

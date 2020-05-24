@@ -11,50 +11,50 @@ from data.script.a_free import combat_fighter_config as config
 
 class combat_fighter(threading.Thread):
 
-    sca = None;
-    init = None;
-    camera = None;
-    engine = None;
-    input = None;
-    config = None;
-    detector_ames = None;
-    detector_enemy = None;
-    console = None;
-    signal = None;
-    xy = None;
+    sca = None
+    init = None
+    camera = None
+    engine = None
+    input = None
+    config = None
+    detector_ames = None
+    detector_enemy = None
+    console = None
+    signal = None
+    xy = None
 
-    STATUS_0 = True;
-    STATUS_1 = True;
-    STATUS_2 = True;
-    STATUS_3 = True;
-    SCRIPT_PHASE = 0;
-    INVENTORY_COUNT = 0;
-    SUCCESS_COUNT = 0;
-    OUTPUT = None;
-    COMMAND = None;
+    STATUS_0 = True
+    STATUS_1 = True
+    STATUS_2 = True
+    STATUS_3 = True
+    SCRIPT_PHASE = 0
+    INVENTORY_COUNT = 0
+    SUCCESS_COUNT = 0
+    OUTPUT = None
+    COMMAND = None
 
-    CAMERA = 2;
+    CAMERA = 2
 
     def __init__(self):
-        threading.Thread.__init__(self);
-        self.sca = logout.logout;
-        self.init = init.init();
-        self.camera = camera_view.camera_view;
-        self.engine = opencv2.opencv2;
-        self.input = control.control;
-        self.config = config.combat_fighter_config;
-        self.detector_ames = object_detection.object_detection();
-        self.detector_enemy = object_detection.object_detection();
-        self.console = interface.interface;
-        self.signal = send_mail.sendmail;
+        threading.Thread.__init__(self)
+        self.sca = logout.logout
+        self.init = init.init()
+        self.camera = camera_view.camera_view
+        self.engine = opencv2.opencv2
+        self.input = control.control
+        self.config = config.combat_fighter_config
+        self.detector_ames = object_detection.object_detection()
+        self.detector_enemy = object_detection.object_detection()
+        self.console = interface.interface
+        self.signal = send_mail.sendmail
 
     def run(self):
-        self.init.startWait();
-        self.camera.cameraInit(self.camera,self.CAMERA);
-        self.camera.cameraUp(self.camera);
-        self.detector_ames.getStatus(0,self.CAMERA);
-        self.detector_enemy.getStatus(2,self.CAMERA);
+        self.init.startWait()
+        self.camera.cameraInit(self.camera,self.CAMERA)
+        self.camera.cameraUp(self.camera)
+        self.detector_ames.getStatus(0,self.CAMERA)
+        self.detector_enemy.getStatus(2,self.CAMERA)
 
     def getStatus(self):
-        print(self.console.TERMINAL_INTERFACE[0]+self.config.SCRIPT_NAME+self.console.TERMINAL_INTERFACE[4]);
-        self.start();
+        print(self.console.TERMINAL_INTERFACE[0]+self.config.SCRIPT_NAME+self.console.TERMINAL_INTERFACE[4])
+        self.start()

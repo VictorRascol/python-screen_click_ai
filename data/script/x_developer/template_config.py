@@ -1,3 +1,3 @@
 class template():
 
-    SCRIPT_NAME = "TEMPLATE 1.0";
+    SCRIPT_NAME = "TEMPLATE 1.0"

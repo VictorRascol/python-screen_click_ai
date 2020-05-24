@@ -1,7 +1,7 @@
 class object_detection_config():
 
-    SCRIPT_NAME = "OBJECT DETECTION MODULE 0.4v";
-    SET = "start";
+    SCRIPT_NAME = "OBJECT DETECTION MODULE 0.4v"
+    SET = "start"
 
     AMES_OBJECT = [
         ".\\resources\\interface\\modules\\object_detection\\ames\\bee_keeper.png",
@@ -22,7 +22,7 @@ class object_detection_config():
         ".\\resources\\interface\\modules\\object_detection\\ames\\sandwich_lady.png",
         ".\\resources\\interface\\modules\\object_detection\\ames\\sergeant_damien.png",
         ".\\resources\\interface\\modules\\object_detection\\ames\\strange_plant.png",
-    ];
+    ]
 
     NPC_OBJECT = [
         [".\\resources\\interface\\modules\\object_detection\\npc\\banker.png", "Banker"],
@@ -31,7 +31,7 @@ class object_detection_config():
         [".\\resources\\interface\\modules\\object_detection\\npc\\betty.png", "Betty"],
         [".\\resources\\interface\\modules\\object_detection\\npc\\squire.png", "Squire"],
         [".\\resources\\interface\\modules\\object_detection\\npc\\wizard_akutha.png", "Wizard Akutha"],
-    ];
+    ]
 
     ENEMY_OBJECT = [
         [".\\resources\\interface\\modules\\object_detection\\enemy\\cow.png","cow",".\\resources\\interface\\modules\\object_detection\\enemy\\function\\cow_attack.png"],
@@ -46,14 +46,14 @@ class object_detection_config():
         [".\\resources\\interface\\modules\\object_detection\\enemy\\zombie.png", "zombie",".\\resources\\interface\\modules\\object_detection\\enemy\\function\\zombie_attack.png"],
         [".\\resources\\interface\\modules\\object_detection\\enemy\\flesh_crawler.png", "flesh_crawler",".\\resources\\interface\\modules\\object_detection\\enemy\\function\\flesh_crawler_attack.png"],
         [".\\resources\\interface\\modules\\object_detection\\enemy\\giant_rat.png", "giant_rat",".\\resources\\interface\\modules\\object_detection\\enemy\\function\\giant_rat_attack.png"],
-    ];
+    ]
 
     ENEMY_OBJECT_ACTIVE = [
 
-    ];
+    ]
 
     FUNCTION = [
         ".\\resources\\interface\\modules\\object_detection\\function\\attack.png",
         ".\\resources\\interface\\modules\\object_detection\\function\\dismiss.png",
         ".\\resources\\interface\\modules\\object_detection\\function\\failsafe.png",
-    ];
+    ]
