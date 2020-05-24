@@ -14,15 +14,30 @@ class server_choose():
         self.engine = engine
 
     def serverInit(self,choose):
-        if self.engine.getObject(self.engine,self.config.SPECIAL_OBJECT[0]):
-            self.xy = self.engine.getSize(self.engine,self.config.SPECIAL_OBJECT[0])
-            self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.SPECIAL_OBJECT[0],2)
-            self.chooseInit(choose)
+        serverSelectedBool = self.isServerSelected(choose)
+
+        if serverSelectedBool == False:
+            if self.engine.getObject(self.engine,self.config.SPECIAL_OBJECT[0]):
+                self.xy = self.engine.getSize(self.engine,self.config.SPECIAL_OBJECT[0])
+                self.input.moveMouse(self.input,self.xy[0][0],self.xy[1][0],0.1,1,self.config.SPECIAL_OBJECT[0],2)
+                self.chooseInit(choose)
+            else:
+                pass
         else:
             pass
 
+    def isServerSelected(self, choose):
+        for index, value in enumerate(self.config.SPECIAL_INDEX):
+            if int(self.config.SPECIAL_INDEX[index]) == int(choose):
+                if self.engine.getObject(self.engine,self.config.SELECTED_WORLD[index],0.9):
+                    return True
+                else:
+                    return False
+            else:
+                pass
+
     def chooseInit(self,choose):
-        for index, server in enumerate(self.config.SPECIAL_INDEX):
+        for index, value in enumerate(self.config.SPECIAL_INDEX):
             if int(self.config.SPECIAL_INDEX[index]) == int(choose):
                 self.chooseServer(index)
             else:
